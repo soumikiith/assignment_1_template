@@ -4,10 +4,10 @@
 
 using namespace std;
 
-bool isPalindrome(std::string &str)
+bool isPalindrome(string &str)
 {
-    std::string reversedStr = str;
-    std::reverse(reversedStr.begin(), reversedStr.end());
+    string reversedStr = str;
+    reverse(reversedStr.begin(), reversedStr.end());
 
     return str == reversedStr;
 }

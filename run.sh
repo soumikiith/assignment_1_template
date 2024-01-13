@@ -13,3 +13,7 @@ mkdir -p $OUT_DIR
 $CLANG $INP_DIR/file1.c -S -emit-llvm -o $OUT_DIR/file1.ll
 
 # write the similar commands for remaining files to generate .ll files
+
+
+
+# Write the commands to generate transformed IR files using -mem2reg. Please refer to https://llvm.org/docs/Passes.html#mem2reg-promote-memory-to-register.

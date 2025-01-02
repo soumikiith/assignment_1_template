@@ -1,6 +1,6 @@
 #!/bin/bash
 
-dirs=("assign_c" "assign_IR" "assign_c/output_IR" "assign_c/output_mem")
+dirs=("assign_c" "assign_c/output_IR" "assign_c/output_mem")
 files=("run.sh" "overview.pdf" "checker.sh")
 
 pass=true
@@ -63,6 +63,8 @@ done
 
 if $pass; then
     echo "Accepted"
+    printf '[ \u2714 ]\n'
 else
     echo "Rejected"
+    printf '[ \u274c ]\n'
 fi

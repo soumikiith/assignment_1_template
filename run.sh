@@ -1,13 +1,21 @@
+#!/bin/bash
+
 LLVM_BUILD_DIR=$1
+
 if [[ -z "$1" ]]; then
-    echo "Please provide LLVM_BUILD_DIR as 1st argument"
-    echo "Exiting..."
-    exit 0
+	echo -e "Please provide path to LLVM Build Directory as first argument."
+	echo -e "Usage: ./run.sh (path_to_llvm_build_directory). e.g. ./run.sh ../../llvm_project/build/"
+	echo "Exiting..."
+    	exit 0
 fi
-OPT=$LLVM_BUILD_DIR/bin/opt
+LLVM_OPT=""
+OPT=$LLVM_OPT
 CLANG=$LLVM_BUILD_DIR/bin/clang
+
 OUT_DIR=./assign_C/output_IR
+
 INP_DIR=./assign_C
+
 mkdir -p $OUT_DIR
 
 $CLANG $INP_DIR/file1.c -S -emit-llvm -o $OUT_DIR/file1.ll

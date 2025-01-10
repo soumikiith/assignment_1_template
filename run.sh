@@ -4,7 +4,7 @@ LLVM_BUILD_DIR=$1
 
 if [[ -z "$1" ]]; then
 	echo -e "Please provide path to LLVM Build Directory as first argument."
-	echo -e "Usage: ./run.sh (path_to_llvm_build_directory). e.g. ./run.sh ../../llvm_project/build/"
+	echo -e "Usage: ./run.sh (PATH_to_llvm_build_directory). e.g. ./run.sh ../../llvm_project/build/"
 	echo "Exiting..."
     	exit 0
 fi

@@ -12,9 +12,11 @@ LLVM_OPT=""
 OPT=$LLVM_OPT
 CLANG=$LLVM_BUILD_DIR/bin/clang
 
-OUT_DIR=./assign_C/output_IR
+OUT_DIR=./assign_c/output_IR
 
-INP_DIR=./assign_C
+#Write similar code for output_mem
+
+INP_DIR=./assign_c
 
 mkdir -p $OUT_DIR
 
